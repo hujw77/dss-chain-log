@@ -5,8 +5,6 @@
 ### ./chainlog.sh <entry> return the entry's address
 set -e
 
-[[ "$ETH_RPC_URL" ]] || { echo "Please set a ETH_RPC_URL"; exit 1; }
-
 CHANGELOG=0x000000000774019b96f067cda9fE26076649c729
 
 echo -e "Network: $(seth chain)"
