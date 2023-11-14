@@ -52,10 +52,8 @@ contract ChainLog {
     string public sha256sum;
     string public ipfs;
 
-    constructor() public {
-        wards[msg.sender] = 1;
-        setVersion("0.0.0");
-        setAddress("CHANGELOG", address(this));
+    constructor(address dao) public {
+        wards[dao] = 1;
     }
 
     /// @notice Set the "version" of the current changelog

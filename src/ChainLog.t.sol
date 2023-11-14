@@ -10,7 +10,7 @@ contract ChainLogTest is DSTest {
     ChainLog clog;
 
     function setUp() public {
-        clog = new ChainLog();
+        clog = new ChainLog(address(this));
     }
 
     function testSetAddress() public {
@@ -131,6 +131,6 @@ contract ChainLogTest is DSTest {
     }
 
     function testApproximateDeployCost() public {
-        new ChainLog();
+        new ChainLog(address(this));
     }
 }
