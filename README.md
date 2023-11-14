@@ -5,7 +5,7 @@ An auth-managed on-chain changelog for the MCD system
 
 ## Usage
 
-Contract Address: `0xdA0Ab1e0017DEbCd72Be8599041a2aa3bA7e740F`
+Contract Address: `0x000000000774019b96f067cda9fE26076649c729`
 
 * [Mainnet](https://etherscan.io/address/0xda0ab1e0017debcd72be8599041a2aa3ba7e740f#code)
 * [Kovan](https://kovan.etherscan.io/address/0xda0ab1e0017debcd72be8599041a2aa3ba7e740f#code)
