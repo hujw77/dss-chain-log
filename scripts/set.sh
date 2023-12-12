@@ -15,5 +15,6 @@ path=$(dirname $0)/conf/addr.json
 keys=$(jq -r 'keys_unsorted[]' $path)
 for k in $keys; do
   v=$(jq -r ".${k}" $path)
+  echo $k $v
   seth send $CHANGELOG "setAddress(bytes32,address)" $(convert "$k") $v
 done
